@@ -14,7 +14,7 @@ python3 add_weather.py -i /Path/to/folder/
 
 |Flag                  | Description
 |----------------------|--------------------------------------------------------
-| --i                  | Path to the folder containing the images 
+| -i                  | Path to the folder containing the images 
 
 
 ## Examples
