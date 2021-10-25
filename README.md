@@ -17,19 +17,19 @@ python3 add_weather.py -i /Path/to/folder/
 | --i                  | Path to the folder containing the images 
 
 
-##Examples
+## Examples
 
 
-#Example 1
+# Example 1
 
 Original Image <br/>
-<img src="images/original/1_original.png">
+<img src="images/original/1_original.png" width="400" >
 
 Image with added weather conditions<br/>
 <img src="images/weather_diversity/1_waether.png" >
 
 
-#Example 2
+# Example 2
 
 
 Original Image <br/>
@@ -38,7 +38,7 @@ Original Image <br/>
 Image with added weather conditions<br/>
 <img src="images/weather_diversity/2_waether.png" >
 
-#Example 3
+# Example 3
 
 
 Original Image<br/>
@@ -48,6 +48,6 @@ Image with added weather conditions<br/>
 <img src="images/weather_diversity/3_waether.png" >
 
 
-##Acknowledgement
+## Acknowledgement
 
 This script was part of my master's thesis. My thesis was part of a project at Revere lab at Chalmers university of technology. The images shown above are part of the dataset that the researchers at Revere lab have established. If you want to have access and get sample of the dataset please visit the official site of Revere at [Reeds](https://reeds.opendata.chalmers.se/)
