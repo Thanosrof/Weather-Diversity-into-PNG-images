@@ -1,4 +1,4 @@
-This Python code is a script that I implemented for my thesis project. This script reads png images that are stored into a folder and adds weather conditions. 
+This Python code is a script that I implemented for my thesis project. This script reads grayscale PNG images that are stored into a folder and adds weather conditions. 
 
 There are five weather conditions that the program selects randomly from:
 1) Sunny weather 
