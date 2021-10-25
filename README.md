@@ -23,29 +23,29 @@ python3 add_weather.py -i /Path/to/folder/
 # Example 1
 
 Original Image <br/>
-<img src="images/original/1_original.png" width="400" >
+<img src="images/original/1_original.png" width="500" >
 
 Image with added weather conditions<br/>
-<img src="images/weather_diversity/1_waether.png" >
+<img src="images/weather_diversity/1_waether.png"  width="500">
 
 
 # Example 2
 
 
 Original Image <br/>
-<img src="images/original/2_original.png" >
+<img src="images/original/2_original.png"width="500" >
 
 Image with added weather conditions<br/>
-<img src="images/weather_diversity/2_waether.png" >
+<img src="images/weather_diversity/2_waether.png" width="500" >
 
 # Example 3
 
 
 Original Image<br/>
-<img src="images/original/3_original.png" >
+<img src="images/original/3_original.png" width="500">
 
 Image with added weather conditions<br/>
-<img src="images/weather_diversity/3_waether.png" >
+<img src="images/weather_diversity/3_waether.png" width="500" >
 
 
 ## Acknowledgement
