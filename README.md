@@ -33,7 +33,7 @@ Image with added weather conditions<br/>
 
 
 Original Image <br/>
-<img src="images/original/2_original.png"width="500" >
+<img src="images/original/2_original.png" width="500" >
 
 Image with added weather conditions<br/>
 <img src="images/weather_diversity/2_waether.png" width="500" >
