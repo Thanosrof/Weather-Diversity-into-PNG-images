@@ -33,6 +33,7 @@ for img in glob.glob(inputFolder + "/*.png"):
     image = cv2.imread(img, cv2.IMREAD_GRAYSCALE)
     randomWeather = random.choice(["Brighter","Darker","Rainy", "Snowy","Foggy"])
 
+    ''' If is used to seperate the 5 different conditions''' 
     if randomWeather == "Brighter" :
 
         ''' Adds brightness to the image and saves it'''
