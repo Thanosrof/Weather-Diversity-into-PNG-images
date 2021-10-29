@@ -2,7 +2,7 @@
 
 ''' This Python script is implemented in order to add weather conditions to 16-bit grayscale(monochrome)   '''
 '''    PNG images. The script gets as input the path of the folder that the images are saved and then it   '''
-'''    reads every image on that forlder. Additionally, the algorithm selects randomly from five different '''
+'''    reads every image on that folder. Additionally, the algorithm selects randomly from five different '''
 '''    weather conditions which are "Brighter","Darker","Rainy", "Snowy","Foggy". The selected condition   '''
 '''    is added to each image stored into the path folder and then it is saved as a PNG 16-bit image with  '''
 '''    the same name as the original one. '''
