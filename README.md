@@ -1,3 +1,5 @@
+# Adding weather conditons to PNG grayscale images
+
 This Python code is a script that I implemented for my thesis project. This script reads grayscale PNG images that are stored into a folder and adds weather conditions. 
 
 There are five weather conditions that the program selects randomly from:
@@ -7,10 +9,16 @@ There are five weather conditions that the program selects randomly from:
 4) Snowy
 5) Foggy 
 
-## Usage
-Using Python 3.8
 
-python3 add_weather.py -i /Path/to/folder/
+### Requirements
+
+- Python >= 3.8.10
+- OpenCv 4.2.0
+- Numpy 1.19.5
+ 
+## Usage
+
+* python3 add_weather.py -i /Path/to/folder/
 
 |Flag                  | Description
 |----------------------|--------------------------------------------------------
