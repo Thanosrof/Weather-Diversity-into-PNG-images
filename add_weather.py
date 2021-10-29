@@ -1,3 +1,14 @@
+'''''''''''''''''''''''''''DESCRIPTION'''''''''''''''''''''''''''
+
+''' This Python script is implemented in order to add weather conditions to 16-bit grayscale(monochrome)   '''
+'''    PNG images. The script gets as input the path of the folder that the images are saved and then it   '''
+'''    reads every image on that forlder. Additionally, the algorithm selects randomly from five different '''
+'''    weather conditions which are "Brighter","Darker","Rainy", "Snowy","Foggy". The selected condition   '''
+'''    is added to each image stored into the path folder and then it is saved as a PNG 16-bit image with  '''
+'''    the same name as the original one. '''
+
+
+
 import cv2
 import numpy as np
 import glob
@@ -7,7 +18,7 @@ import argparse
 
 from numpy.lib.type_check import imag
 
-
+''' Reads the path for the folder saved the images'''
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image",required = True, help = "path to images")
 args = vars(ap.parse_args())
@@ -15,13 +26,16 @@ args = vars(ap.parse_args())
 inputFolder = os.path.sep.join([args["image"]])
 folderlen = len(inputFolder)
 
+''' for used to ascess every image with the png extension file of the folder'''
 for img in glob.glob(inputFolder + "/*.png"):
 
+    ''' Reads and store the image and selects randomly one of the 5 weather conditions'''
     image = cv2.imread(img, cv2.IMREAD_GRAYSCALE)
     randomWeather = random.choice(["Brighter","Darker","Rainy", "Snowy","Foggy"])
 
     if randomWeather == "Brighter" :
 
+        ''' Adds brightness to the image and saves it'''
         randomBrightness = random.randint(10,80)
         bright = np.ones(image.shape, dtype = "uint8") * randomBrightness
         brightIncrease = cv2.add(image,bright)
@@ -29,7 +43,8 @@ for img in glob.glob(inputFolder + "/*.png"):
         cv2.imwrite(inputFolder + img[folderlen:],brightIncrease)
 
     elif randomWeather == "Darker" :
-
+        
+        ''' Subtracts brightness of the image and saves it'''
         randomDarkness = random.randint(10,80)
         bright = np.ones(image.shape, dtype = "uint8") * randomDarkness
         brightDecrease = cv2.subtract(image,bright)
@@ -38,6 +53,7 @@ for img in glob.glob(inputFolder + "/*.png"):
 
     elif randomWeather == "Rainy":
 
+        ''' Adds rain drops to the image and saves it'''
         rain = []
         rain_drops = random.randint(1000,2000)
         random_number = random.randint(-10,10)
@@ -59,6 +75,7 @@ for img in glob.glob(inputFolder + "/*.png"):
 
     elif randomWeather == "Snowy":
 
+        ''' Adds snow drops to the image and saves it'''
         rain = []
         rain_drops = random.randint(1000,2000)
         random_number = random.randint(-2,2)
@@ -80,7 +97,10 @@ for img in glob.glob(inputFolder + "/*.png"):
 
     elif randomWeather == "Foggy":
 
+         ''' Blurs the image likewise fog and saves it'''
         foggy_image= cv2.blur(image,(10,10))
         foggy_image = ((foggy_image + 1 ) * 256 ) -1
         cv2.imwrite(inputFolder + img[folderlen:],foggy_image)
+        
+        
     print(img + "Done")
